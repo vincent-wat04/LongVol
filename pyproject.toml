@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "longvol"
+version = "0.7.0"
+description = "Point-in-time research, conditional option simulation, and broker workflow for short-horizon panic-dislocation rebounds"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+openai = ["openai==3.8.0"]
+moomoo = ["moomoo-api==10.10.7008", "protobuf==5.29.5"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+longvol = "longvol.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

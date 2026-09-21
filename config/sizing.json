@@ -1,0 +1,39 @@
+{
+  "mode": "AUTO",
+  "cold_start": {
+    "fees_per_contract": 2.0,
+    "max_risk_allocation": 0.025,
+    "max_premium_allocation": 0.05,
+    "max_contracts": 1,
+    "max_portfolio_premium_allocation": 0.05,
+    "max_portfolio_risk_allocation": 0.025,
+    "max_open_positions": 1,
+    "max_positions_per_underlying": 1
+  },
+  "validated_kelly": {
+    "win_probability_lower_bound": null,
+    "fees_per_contract": 2.0,
+    "fractional_kelly": 0.25,
+    "max_risk_allocation": 0.03,
+    "max_premium_allocation": 0.08,
+    "max_contracts": 2,
+    "max_portfolio_premium_allocation": 0.20,
+    "max_portfolio_risk_allocation": 0.09,
+    "max_open_positions": 3,
+    "max_positions_per_underlying": 1,
+    "min_oos_observation_days": 252,
+    "min_oos_completed_trades": 100,
+    "min_oos_independent_events": 100,
+    "evidence": {
+      "approved": false,
+      "out_of_sample": false,
+      "strategy_version": "0.7.0",
+      "study_path": null,
+      "study_sha256": null,
+      "sample_end": null,
+      "observation_days": 0,
+      "completed_trades": 0,
+      "independent_events": 0
+    }
+  }
+}

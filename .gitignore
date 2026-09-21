@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+state/*.sqlite3*
+state/daily.lock
+state/signals/
+state/exits/
+state/fundamentals/
+data/candidate_inbox/
+research_packets/
+dist/
+build/
+*.egg-info/

@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-09-11T03:07:41.408666-04:00",
+  "environment": "SIMULATE",
+  "account_id": 4813475,
+  "base_currency": "USD",
+  "equity_field": "us_cash",
+  "raw_equity": 1000000.0,
+  "strategy_equity": 2500.0,
+  "usd_cash": 1000000.0,
+  "usd_buying_power": null,
+  "usd_assets": null,
+  "total_assets_usd": 1000000.0,
+  "risk_status": "N/A",
+  "is_pdt": null,
+  "day_trades_left": "N/A",
+  "requested_equity_field": "usd_net_cash_power",
+  "equity_fallback_reason": "SIMULATE_NET_CASH_POWER_UNAVAILABLE",
+  "position_mismatches": []
+}

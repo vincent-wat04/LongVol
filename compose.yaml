@@ -1,0 +1,15 @@
+services:
+  longvol:
+    build: .
+    env_file: .env
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    environment:
+      MOOMOO_OPEND_HOST: host.docker.internal
+    volumes:
+      - ./data:/app/data
+      - ./state:/app/state
+      - ./config:/app/config:ro
+      - ./research_packets:/app/research_packets
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: ["healthcheck", "--data-dir", "/app/data", "--state-dir", "/app/state", "--opend", "--broker", "--research", "--trading-config", "/app/config/trading.json"]

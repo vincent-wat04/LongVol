@@ -1,0 +1,35 @@
+{
+  "client_order_id": "LV-20260909-ENTRY-example01",
+  "code": "US.AAPL261218C00200000",
+  "side": "BUY",
+  "quantity": 1,
+  "limit_price": 1.00,
+  "purpose": "ENTRY",
+  "multiplier": 100,
+  "underlying_code": "US.AAPL",
+  "reference_spot": 190.0,
+  "reference_option_ask": 1.00,
+  "entry_atr": 5.0,
+  "hard_stop_spot": 183.75,
+  "option_stop_price": 0.45,
+  "signal_date": "2026-09-08",
+  "metadata": {
+    "example_only": true,
+    "signal": {
+      "symbol": "AAPL",
+      "as_of": "2026-09-08",
+      "status": "PILOT_CANDIDATE",
+      "atr": 5.0,
+      "selected_option_expiry": "2026-12-18",
+      "scenario_target_option_price": 2.50,
+      "active_iv_percentile": 0.50,
+      "iv_gate_source": "moomoo_option_underlying_rank",
+      "sizing_mode": "COLD_START_FIXED_RISK",
+      "target_spot": 205.0,
+      "target_source": "PROFILE_HVN",
+      "selected_option_iv": 0.60,
+      "max_holding_days": 30,
+      "reasons": "Example only; replace with an actual PILOT_CANDIDATE or BUY_CANDIDATE snapshot"
+    }
+  }
+}
